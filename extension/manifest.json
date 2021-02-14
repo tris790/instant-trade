@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Poe InstaTrade",
+  "description": "Insta whisper",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://www.pathofexile.com/trade*"],
+      "js": ["insta-trade.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  }
+}
