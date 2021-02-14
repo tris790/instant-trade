@@ -4,7 +4,7 @@ const rowCssClass = ".row";
 
 function SendWhisperRequest(message) {
   console.log("Sending whisper request with:", message);
-  fetch("http://localhost:8080/whisper", { mode: "no-cors" })
+  fetch("http://localhost:8080/whisper", { mode: "no-cors", body: message })
     .then((x) => {})
     .then((x) => {});
 }
