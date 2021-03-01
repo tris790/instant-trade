@@ -87,12 +87,10 @@ void SendPasteToPathOfExileWindow() {
 	input[7].ki.wVk = input[0].ki.wVk;
 	input[7].ki.wScan = input[0].ki.wScan;
 
-	ShowWindow(pathOfExileHWND, SW_SHOWNORMAL);
-	Sleep(50);
 	SetForegroundWindow(pathOfExileHWND);
-	Sleep(50);
+	Sleep(100);
 	SendInput(key_count, (LPINPUT)input, sizeof(INPUT));
-	Sleep(50);
+	Sleep(100);
 	SetForegroundWindow(oldFocusedWindow);
 	delete input;
 }
